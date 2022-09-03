@@ -835,6 +835,8 @@ a.social {
     }
 
     .transparent-menu {
+        background-color: rgba(255, 255, 255, 0.25);  
+        backdrop-filter: blur(5px);
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
@@ -1086,8 +1088,6 @@ a.social {
 
     .transparent-menu {
         padding: 30px 15px;
-        background-color: rgba(255, 255, 255, 0.25);  
-        backdrop-filter: blur(5px);
     }
 
     .transparent-menu .right-side {

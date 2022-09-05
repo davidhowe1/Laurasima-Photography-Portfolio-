@@ -20,7 +20,9 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll('.right-side .nav-link-wrapper a');
 
     burger.addEventListener('click',() => {
+        let background = document.querySelector('.dim-background')
         nav.classList.toggle('nav-active');
+        background.classList.toggle('active')
 
         navLinks.forEach((link, index) => {
             if (link.style.animation) {

@@ -20,6 +20,10 @@ body.home {
     overflow-y: hidden;
 }
 
+.dim-background {
+    display: none;
+}
+
 .logo {
     font-family: 'Alata', sans-serif;
     text-transform: uppercase;
@@ -478,12 +482,9 @@ button#nav-right {
 
 .transparent-menu .right-side {
     height: 100%;
+    width: 55%;
     font-size: 0.9rem;
 
-}
-
-.transparent-menu .right-side {
-    font-size: 0.9rem;
 }
 
 .transparent-menu .logo {
@@ -673,6 +674,24 @@ a.social {
 
 @media screen and (max-width: 920px) {
 
+    .dim-background {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.0);
+        transition: all ease-in-out 0.1s;
+    }
+    
+    .dim-background.active {
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0;
+        z-index: 10;
+        transition: all ease-in-out 0.1s;
+    }
+
     .content-wrapper-home {
         display: block;
         justify-content: center;
@@ -766,6 +785,10 @@ a.social {
         padding: 30px 60px;
     }
 
+    a.button:hover {
+        padding: 30px 60px;
+    }
+
     .img-text-wrapper .subtitle {
         font-size: 1rem;
     }
@@ -802,7 +825,7 @@ a.social {
 
     .right-side {
         position: absolute;
-        height: 50vh;
+        height: 100vh;
         width: 50%;
         right: 0px;
         padding: 150px 0px 60px 0px;
@@ -821,7 +844,7 @@ a.social {
     /* Home page Styles */
 
     .hero-slideshow .right-side {
-        height: 50vh;
+        min-height: 100vh;
         box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
     }
 
@@ -837,7 +860,7 @@ a.social {
     .transparent-menu {
         background-color: rgba(255, 255, 255, 0.25);  
         backdrop-filter: blur(5px);
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        box-shadow: rgba(99, 99, 99, 0.12) 0px 2px 8px 0px;
     }
 
     .transparent-menu #mobile-menu.burger span.bar1, span.bar2, span.bar3 {
@@ -1041,6 +1064,13 @@ a.social {
         width: 100%;
     }
 
+    a.button:hover {
+        display: flex;
+        justify-content: center;
+        padding: 18px 20px;
+        width: 100%;
+    }
+
     .subtitle-wrapper {
         margin: 0px 0px 0px 0px;
         padding: 0px;
@@ -1130,7 +1160,7 @@ a.social {
     }
 
     .right-side {
-        width: 50%;
+        width: 55%;
     }
 
     body {

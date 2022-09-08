@@ -113,84 +113,84 @@ let project1 = [
     "photos/8.jpeg",
     "Renshaw Street",
     "A man cleans posters from a grafiti plastered wall.",
-    "This was taken on an Olympus OM analogue camera"
+    "- This was taken on an Olympus OM analogue camera"
 ]
 
 let project2 = [
     "photos/2.jpeg",
     "Arts Club, Seel Street",
     "The Arts Club at night. Monocrhome and plenty of moody shadows thrown by the neon light.",
-    "This was taken on an Olympus OM analogue camera"
+    "- This was taken on an Olympus OM analogue camera"
 ]
 
 let project3 = [
     "photos/11.jpeg",
     "Formby Beach",
     "A house sits in the middle of the Formby Beach Red Squirrel Reserve.",
-    "This was taken on an Olympus OM analogue camera"
+    "- This was taken on an Olympus OM analogue camera"
 ]
 
 let project4 = [
     "photos/7.jpeg",
     "Lark Lane",
     "A coffee shop on Lark lane, Liverpool. The reflections superimposed on the cafe interior.",
-    "This was taken on an Olympus OM analogue camera"
+    "- This was taken on an Olympus OM analogue camera"
 ]
 
 let project5 = [
     "photos/10.jpeg",
     "Porto Portugal",
     "Porto is a beautiful city full of lots of curiousities.",
-    "This was taken on an Olympus OM analogue camera"
+    "- This was taken on an Olympus OM analogue camera"
 ]
 
 let project6 = [
     "photos/1.jpeg",
     "Smithdown Road",
     "Laundrettes offer lots of wonderful photo opportunities. At night, they are some of the only units open and act as a beacon.",
-    "This was taken on an Olympus OM analogue camera"
+    "- This was taken on an Olympus OM analogue camera"
 ]
 
 let project7 = [
     "photos/9.jpeg",
     "Berry Street",
     "A corner shot near China Town in Liverpool, containing lots of graphics elements to this image.",
-    "This was taken on an Olympus OM analogue camera"
+    "- This was taken on an Olympus OM analogue camera"
 ]
 
 let project8 = [
     "photos/6.jpeg",
     "K-Centre, Hanover Street",
     "A night time shot of a barber shop in Liverpool city centre. Film was pushed that night.",
-    "Aperture 1.8 and shutter speed of 1/60.",
+    "- Aperture 1.8 and shutter speed of 1/60.",
 ]
 
 let project9 = [
     "photos/17.jpeg",
     "Liverpool Town Centre",
     "Apartment block, almost a brutalist vibe to the building. Shot on a clear day with minimal cloud.",
-    "This was taken on an Olympus OM analogue camera",
+    "- This was taken on an Olympus OM analogue camera",
 ]
 
 let project10 = [
     "photos/14.jpeg",
     "Telegraph Pole",
     "Very minimalist graphic shot of a telegraph pole with cables eminating from the top of the pole.",
-    "This was taken on an Olympus OM analogue camera"
+    "- This was taken on an Olympus OM analogue camera"
 ]
 
 let project11 = [
     "photos/15.jpeg",
     "Baltic Triangle",
     "Scooters line up at a charging station near The Baltic Triangle.",
-    "This was taken on an Olympus OM analogue camera",
+    "- This was taken on an Olympus OM analogue camera",
 ]
 
 let project12 = [
     "photos/16.jpeg",
     "Formby Beach",
     "Shot on the dunes at formby beach on a slightly overcast day.",
-    "This was taken on an Olympus OM analogue camera",
+    "- This was taken on an Olympus OM analogue camera",
 ]
 
 // Call overlay functions on project clicked

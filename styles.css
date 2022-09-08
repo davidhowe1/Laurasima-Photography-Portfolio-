@@ -69,7 +69,7 @@ h1 {
 /* NAV Styles */
 
 .nav-wrapper {
-    height: 25px;
+    min-height: 25px;
     display: flex;
     justify-content: space-between;
     padding: 43px;

@@ -78,7 +78,6 @@ h1 {
 
 .right-side {
     display: flex;
-    height: 50vh;
 }
 
 .nav-wrapper > .right-side > div {
@@ -691,7 +690,7 @@ a.social {
         display: flex;
         height: 100%;
         width: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         z-index: -1;
         background-color: rgba(255, 255, 255, 0.0);
@@ -901,6 +900,7 @@ a.social {
     .nav-active {
         transform: translateX(0%);
         transition: all ease 0.2s;
+        position: fixed;
     }
 
     @keyframes navLinkFade {

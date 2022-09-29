@@ -1,8 +1,9 @@
 /* Master Styles */
 html {
+    display: flex;
     overflow-x: hidden;
-    position: relative;
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -11,12 +12,14 @@ body {
     overflow-x: hidden;
     position: relative;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 body.home {
+    min-height: 100vh;
     overflow-y: hidden;
 }
 
@@ -29,7 +32,7 @@ body.home {
     font-family: 'Alata', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    color: #1a1a1a;
+    color: rgb(26, 26, 26);
 }
 
 a {
@@ -78,17 +81,13 @@ h1 {
 
 .right-side {
     display: flex;
-}
-
-.nav-wrapper > .right-side > div {
-    margin-left: 20px;
-    font-size: 0.9em;
+    flex-direction: row;
 }
 
 .nav-link-wrapper {
+    margin-left: 20px;
+    font-size: 1rem;
     height: 22px;
-    border-bottom: 1px solid transparent;
-    border-bottom:  transparent;
 }
 
 .nav-link-wrapper a {
@@ -97,12 +96,7 @@ h1 {
     border-bottom: 2px solid transparent;
     text-decoration: none;
     text-transform: uppercase;
-    transition: ease-in-out all 0.2s;
-}
-
-.nav-link-wrapper:hover {
-    transition: ease-in-out all 0.2s;
-    text-transform: uppercase;
+    transition: ease all 0.2s;
 }
 
 .nav-link-wrapper a:hover {
@@ -110,7 +104,7 @@ h1 {
     padding: 10px 0px 10px 0px;
     border-bottom: 2px solid #202020;
     text-transform: uppercase;
-    transition: ease-in-out all 0.2s;
+    transition: ease all 0.2s;
 }
 
 .active-nav-link {
@@ -134,11 +128,48 @@ h1 {
 
 /* Portfolio Styles */
 
+.loading-screen {
+    display: flex;
+    align-items: flex-start;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    min-height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    justify-content: center;
+    background-color:rgb(255, 254, 254);
+    transition: ease-in-out all 1s
+}
+
+.loading-screen.hidden {
+    display: flex;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    opacity: 0;
+    justify-content: center;
+    background-color: transparent;
+    transition: ease-in-out all 1s
+}
+
+.loader {
+    margin: auto;
+    font-weight: 100;
+    font-family: 'Alata', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 12px;
+    background:linear-gradient(currentColor 0 0) bottom left/0% 2px no-repeat;
+    animation:c2 2s linear infinite;
+}
+
+@keyframes c2 {to{background-size: 100% 2px}}
+
 .content-wrapper-home {
     display: block;
     justify-content: center;
     padding: 0px 38px;
-    margin-bottom: 10px;
 }
 
 .content-wrapper {
@@ -150,7 +181,7 @@ h1 {
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: -8px;
+    cursor: pointer;
 }
 
 .portfolio-item-wrapper {
@@ -165,8 +196,7 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: ease-in-out all 0.3s;
+    transition: ease all 0.3s;
 }
 
 .img-text-wrapper {
@@ -183,35 +213,30 @@ h1 {
 
 /* Overlay Styles */
 
-.overlay-container {
+#overlay-container {
     display: flex;
-    position: sticky;
-    left: 0px;
-    top: 0px;   
-    width: 100%;
-    height: auto;
-    z-index: 1;
+    padding: 0px 50px;
 }
 
 @keyframes overlayFade {
     from {
-        opacity: 1;
+        opacity: 100%;
     }
     
     to {
-        opacity: 0;
+        opacity: 0%;
     }
 }
 
 @keyframes overlayShow {
     from {
         height: auto;
-        opacity: 0;
+        opacity: 0%;
     }
     
     to {
         height: auto;
-        opacity: 1;
+        opacity: 100%;
     }
 }
 
@@ -232,7 +257,7 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 #close-button {
@@ -288,7 +313,6 @@ h1 {
     padding: 20px 20px 20px 20px;
     width: auto;
     height: auto;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #text-container {
@@ -296,13 +320,13 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 60px;
-    max-width: 350px;
+    max-width: 380px;
 }
 
 #text-container h1 {
     font-size: 4rem;
     padding: 0px 0px 30px 0px;
-    border-bottom: 5px solid #1a1a1a;
+    border-bottom: 1px solid #8a8a8a;
     margin: 30px 0px;
 }
 
@@ -311,7 +335,6 @@ h1 {
     font-size: 0.9rem;
     color:#aaaaaa;
 }
-
 
 button#nav-left {
     border: none;
@@ -431,7 +454,12 @@ button#nav-right {
 
 .profile-image-wrapper img {
     max-width: 100%;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.05) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.profile-image-wrapper img#portrait {
+    max-width: 78%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 #a.profile-image-wrapper img {
@@ -465,8 +493,14 @@ button#nav-right {
     flex-direction: row;
     overflow-x: scroll;
     box-sizing: border-box;
+    background-color: transparent;
     height: 100%;
     box-shadow: rgba(100, 100, 111, 0.08) 0px 7px 29px 0px;
+}
+
+.landscape img {
+    object-fit: cover;
+    max-width: 1500px;
 }
 
 .landscape {
@@ -514,6 +548,10 @@ button#nav-right {
 }
 
 /* Button styles */
+
+a.button {
+    margin: 30px 0px;
+}
 
 .button {
     padding: 20px 50px;
@@ -597,7 +635,8 @@ input#contact-form-btn:hover {
 /* Footer Styles */
 
 .footer-items-wrapper {
-    padding: 50px;
+    padding: 0px 50px;
+    height: 18vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -607,6 +646,7 @@ input#contact-form-btn:hover {
 
 .footer-items {
     display: flex;
+    align-items: center;
 }
 
 .footer-link-wrapper a {
@@ -672,19 +712,50 @@ a.social {
         padding-left: 38px;
         padding-right: 38px;
         margin-bottom: 10px;
-
     }
 
     .portfolio-items-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-top: -8px;
         width: cal(33.333%)
+    }
+
+    .profile-image-wrapper img#portrait {
+        max-width: 100%;
+    }
+
+    #text-container h1 {
+        font-size: 2.5rem;
+        margin: 0px;
+    }
+
+    #text-container :nth-child(3) {
+        margin-top: 0px;
+    }
+
+    #overlay-container {
+        padding: 0px;
+    }
+
+    .profile-content-wrapper h1, p {
+        margin: 10px 0px; 
+    }
+
+    .button-container {
+        padding: 40px 0px;
+    }
+
+    a.button {
+        margin: 10px 0px;
     }
 
 }
 
 @media screen and (max-width: 920px) {
+
+    .loader {
+        font-size: 1.2rem;
+    }
 
     .dim-background {
         display: flex;
@@ -715,7 +786,6 @@ a.social {
     .portfolio-items-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: -8px;
         width: cal(50%)
     }
 
@@ -766,6 +836,12 @@ a.social {
         justify-content: center;
     }
 
+    .profile-image-wrapper img#portrait {
+        max-width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        justify-content: center;
+    }
+
     .profile-content-wrapper {
         padding: 0px;
         height: auto;
@@ -791,6 +867,7 @@ a.social {
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding: 20px 0px;
     }
 
     a.button {
@@ -931,7 +1008,14 @@ a.social {
 
     }
 
-    /* TABLET OVERLAY STYLES */
+    /* Tablet Overlay Styles */
+
+    #overlay-container {
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px;
+        width: 100%;
+    }
 
     #content-container {
         display: flex;
@@ -939,6 +1023,12 @@ a.social {
         justify-content: center;
         background-color: transparent;
         width: 100%;
+    }
+
+    #close-button-container {
+        display: flex;
+        position: relative;
+        top: 30px;
     }
 
     #content-container .profile-image-wrapper img {
@@ -956,7 +1046,6 @@ a.social {
         box-shadow: inset 0 0 0 200px rgba(255,255,255,0.5);
         height: 31px;
         width: 31px;
-        top: 30px;
     }
 
     #text-container {
@@ -979,7 +1068,7 @@ a.social {
         font-size: 1rem;
     }
 
-    /* TABLET FORM STYLES */
+    /* Tablet Form Styles */
 
     form {
         display: flex;
@@ -1004,7 +1093,8 @@ a.social {
     }
 
     .footer-items-wrapper {
-        padding: 15px 43px;
+        height: 8vh;
+        padding: 0px 43px;
         display: flex;
         flex-direction: row;
     }
@@ -1029,10 +1119,13 @@ a.social {
         padding: 4px;
     }
 
+    .loader {
+        font-size: 1rem;
+    }
+
     .portfolio-items-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: -8px;
     }
 
     .portfolio-item-wrapper {
@@ -1067,7 +1160,6 @@ a.social {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .button-container {
@@ -1137,7 +1229,7 @@ a.social {
     }
 
     .transparent-menu {
-        padding: 30px 15px;
+        padding: 20px 15px;
     }
 
     .transparent-menu .right-side {
@@ -1151,8 +1243,9 @@ a.social {
     /* Responsive Navbar and Button */
 
     .nav-wrapper {
-        height: 18px;
-        padding: 30px 15px;
+        min-height: 20px;
+        max-height: 20px;
+        padding: 20px 15px;
     }
 
     .burger {
@@ -1209,7 +1302,9 @@ a.social {
     }
 
     #close-button-container {
-        height: 0px;
+        display: flex;
+        position: relative;
+        top: 30px;
     }
 
     .overlay-bar {

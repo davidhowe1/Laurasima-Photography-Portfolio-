@@ -2,138 +2,144 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>laurasima-contact</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>laurasima-contact</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <div class="dim-background"></div>
+    <div class="dim-background"></div>
 
-  <div class="container">
-    
-    <div class="nav-wrapper">
+        <div class="container">
 
-      <div class="left-side">
+        <div class="nav-wrapper">
 
-          <div class="logo-wrapper">
-            <a href="index.html">
-              <div class="logo">Laurasima Clinton</div>
-            </a>
-          </div>
+            <div class="left-side">
 
-      </div>
+                <div class="logo-wrapper">
+                    <a href="index.html">
+                    <div class="logo">Laurasima Clinton</div>
+                    </a>
+                </div>
 
-      <div class="right-side">
+            </div>
 
-          <div class="nav-link-wrapper">
-            <a href="index.html">Home</a>
-          </div>
+            <div class="right-side">
 
-          <div class="nav-link-wrapper">
-            <a href="portfolio.html">Portfolio</a>
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="portfolio.html">Portfolio</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+            <div class="burger" id="mobile-menu">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+
         </div>
 
-          <div class="nav-link-wrapper">
-            <a href="about.html">About</a>
-          </div>
+        <div class="about-page-content-wrapper">
 
-          <div class="nav-link-wrapper active-nav-link">
-            <a href="contact.html">Contact</a>
-          </div>
+            <div class="content-wrapper">
 
-      </div>
+                <div class="two-column-wrapper">
 
-      <div class="burger" id="mobile-menu">
-        <span class="bar1"></span>
-        <span class="bar2"></span>
-        <span class="bar3"></span>
-      </div>
-        
-  </div>
+                    <div class="profile-image-wrapper">
+                        <img src="photos/4-profile.jpeg" alt="Man photographing in Liverpool town centre">
+                    </div>
 
-  <div class="about-page-content-wrapper">
+                <div class="profile-content-wrapper">
+                    <h1>Contact Me</h1>
 
-  <div class="content-wrapper">
+                    <p>The best way to contact me is via <a src="https://www.instagram.com/">Instagram.</a>
+                    You can private message there for inquiries and general questions about my work and
+                    pricing.
+                    </p>
 
-    <div class="two-column-wrapper">
+                    <p>Alternatively, use the form below to send me a message.</p>
 
-        <div class="profile-image-wrapper">
-          <img src="photos/4-profile.jpeg">
+                    <form action="contact-form.php" method="POST">
+                        <label for="name">Name</label>
+                        <input id="name" type="text">
+
+                        <label for="email">Email</label>
+                        <input id="email" type="text">
+
+                        <label for="email-subject">Subject</label>
+                        <input id="subject" type="text">
+
+                        <label for="message">Type Your Message</label>
+                        <textarea id="message" type="text" rows="10"></textarea>
+
+                        <input type="submit" value="Send Message" id="contact-form-btn">
+                    </form>
+                </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="profile-content-wrapper">
-          <h1>Contact Me</h1>
+    <footer>
 
-          <p>The best way to contact me is via <a src="https://www.instagram.com/">Instagram.</a>
-              You can private message there for inquiries and general questions about my work and
-              pricing.
-          </p>
+        <div class="footer-items-wrapper">
 
-          <p>Alternatively, use the form below to send me a message.</p>
+            <div class="footer-items">
 
-          <form action="">
-            <label for="name">Name</label>
-            <input id="name" type="text">
+                <div class="footer-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
 
-            <label for="email">Email</label>
-            <input id="name" type="text">
+                <div class="footer-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
 
-            <label for="message">Type Your Message</label>
-            <textarea id="message" type="text" rows="10"></textarea>
-            <input type="submit" value="Send Message" id="contact-form-btn">
-          </form>
+                <div class="footer-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+            <div class="social-media-icons">
+                <div class="social-media-icon-items">
+
+                    <a class="social" target="_blank" href="https://www.instagram.com/laur.analogue/"><img 
+                    src="social-media-icons/instagram.png"></a>
+
+                    <a class="social" target="_blank" href="https://www.pinterest.com/" target="_blank"><img 
+                    src="social-media-icons/pinterest.png"></a>
+
+                </div>
+            </div>
+
         </div>
+
+        <p class="website-rights">Laurasima Clinton 2022. All rights reserved ©</p>
 
     </div>
 
-  </div>
-
-  </div>
-
-  <footer>
-    <div class="footer-items-wrapper">
-
-      <div class="footer-items">
-
-        <div class="footer-link-wrapper">
-        <a href="index.html">Home</a>
-        </div>
-
-        <div class="footer-link-wrapper">
-        <a href="about.html">About</a>
-        </div>
-
-        <div class="footer-link-wrapper">
-        <a href="contact.html">Contact</a>
-        </div>
-
-      </div>
-
-        <div class="social-media-icons">
-          <div class="social-media-icon-items">
-
-              <a class="social" target="_blank" href="https://www.instagram.com/laur.analogue/"><img 
-                src="social-media-icons/instagram.png"></a>
-
-              <a class="social" target="_blank" href="https://www.pinterest.com/" target="_blank"><img 
-                src="social-media-icons/pinterest.png"></a>
-
-          </div>
-        </div>
-  
-      </div>
-
-      <p class="website-rights">Laurasima Clinton 2022. All rights reserved ©</p>
-      
-    </div>
-  </footer>
+    </footer>
 
 </body>
 

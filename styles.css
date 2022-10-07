@@ -28,11 +28,13 @@ body.home {
 }
 
 .logo {
-    font-size: 1.13rem;
+    padding: 3px 8px;
+    border: #1a1a1a solid 4px;
+    font-size: 2rem;
     font-family: 'Alata', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    color: rgb(26, 26, 26);
+    color: #1a1a1a;
 }
 
 a {
@@ -76,7 +78,8 @@ h1 {
     min-height: 25px;
     display: flex;
     justify-content: space-between;
-    padding: 43px;
+    align-items: center;
+    padding: 20px 43px;
 }
 
 .right-side {
@@ -522,7 +525,8 @@ button#nav-right {
     flex-direction: row;
     position: absolute;
     justify-content: space-between;
-    padding: 43px;
+    align-items: center;
+    padding: 20px 43px;
     width: 100%;
     box-sizing: border-box;
     z-index: 100;
@@ -534,7 +538,9 @@ button#nav-right {
 }
 
 .transparent-menu .logo {
-    font-size: 1.13rem;
+    padding: 3px 8px;
+    border: #1a1a1a solid 4px;
+    font-size: 2rem;
     background: transparent;
 }
 
@@ -1098,13 +1104,15 @@ a.social {
         display: flex;
         flex-direction: row;
     }
-
 }
 
 @media screen and (max-width: 600px) {
 
     .logo {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
+        padding: 2px 5px;
+        font-weight: 500;
+        border: #1a1a1a solid 3px;
     }
 
     .content-wrapper-home {
@@ -1237,14 +1245,15 @@ a.social {
     }
 
     .transparent-menu .logo {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
+        padding: 2px 5px;
+        font-weight: 500;
+        border: #1a1a1a solid 3px;
     }
 
     /* Responsive Navbar and Button */
 
     .nav-wrapper {
-        min-height: 20px;
-        max-height: 20px;
         padding: 20px 15px;
     }
 

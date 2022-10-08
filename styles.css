@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: 'Analogue Reduced', sans-serif;
+    font-family: 'Alata', sans-serif;
     margin: 0px;
     overflow-x: hidden;
     position: relative;
@@ -23,14 +23,18 @@ body.home {
     overflow-y: hidden;
 }
 
+img[alt="www.000webhost.com"] {
+    display: none;
+}
+
 .dim-background {
     display: none;
 }
 
 .logo {
-    padding: 3px 8px;
+    padding: 2px 6px;
     border: #1a1a1a solid 4px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: 'Alata', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
@@ -42,18 +46,17 @@ a {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Alata', sans-serif;
     font-size: 1rem;
     color: #202020;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Alata', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     color: #1a1a1a;
-    text-transform: uppercase;
 }
 
 .container {
@@ -79,7 +82,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 43px;
+    padding: 10px 43px;
 }
 
 .right-side {
@@ -89,7 +92,7 @@ h1 {
 
 .nav-link-wrapper {
     margin-left: 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     height: 22px;
 }
 
@@ -526,7 +529,7 @@ button#nav-right {
     position: absolute;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 43px;
+    padding: 10px 43px;
     width: 100%;
     box-sizing: border-box;
     z-index: 100;
@@ -538,9 +541,9 @@ button#nav-right {
 }
 
 .transparent-menu .logo {
-    padding: 3px 8px;
+    padding: 2px 6px;
     border: #1a1a1a solid 4px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background: transparent;
 }
 
@@ -562,6 +565,7 @@ a.button {
 .button {
     padding: 20px 50px;
     text-transform: uppercase;
+    align-items: center;
     font-size: 1.1rem;
     font-weight: 500;
     border: 2px #202020 solid;
@@ -593,7 +597,7 @@ form {
     flex-direction: column;
     width: 100%;
     margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Alata', sans-serif;
     color: #202020;
     font-weight: 200;
 }
@@ -613,7 +617,7 @@ textarea#message {
     padding: 10px 0px 10px 0px;
     border: none;
     background-color:#ebebeb;
-    font-family: 'Analogue Reduced', sans-serif;
+    font-family: 'Alata', sans-serif;
 }
 
 input#contact-form-btn {
@@ -636,6 +640,21 @@ input#contact-form-btn:hover {
     box-shadow: #202020 6px 6px;
     transition: ease-in-out all 0.2s;
     cursor: pointer;
+}
+
+.sent-message-alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.sent-message-alert h1 {
+    text-transform: none;
 }
 
 /* Footer Styles */
@@ -679,7 +698,7 @@ input#contact-form-btn:hover {
 }
 
 p.website-rights {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Alata', sans-serif;
     font-size: 0.7rem;
     color: #aaaaaa;
     display: flex;
@@ -784,8 +803,7 @@ a.social {
     .content-wrapper-home {
         display: block;
         justify-content: center;
-        padding-left: 38px;
-        padding-right: 38px;
+        padding: 0px 15px;
         margin-bottom: 10px;
     }
     
@@ -818,8 +836,8 @@ a.social {
     .two-column-wrapper {
         display: flex;
         flex-flow: column;
-        padding: 0px 22px;
-        margin-bottom: 100px;
+        padding: 0px 0px;
+        margin: 0px 0px 100px 0px;
     }
 
     .two-column-wrapper > #reverse{
@@ -832,13 +850,14 @@ a.social {
     #b{order:2;}
 
     .profile-image-wrapper {
-        height: 100%;
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
     .profile-image-wrapper img {
         display: flex;
-        max-width: 100%;
+        margin: 0px;
         justify-content: center;
     }
 
@@ -953,6 +972,7 @@ a.social {
     }
 
     .transparent-menu {
+        padding: 20px 20px;
         background-color: rgba(255, 255, 255, 0.25);  
         backdrop-filter: blur(5px);
         box-shadow: rgba(99, 99, 99, 0.12) 0px 2px 8px 0px;
@@ -978,6 +998,10 @@ a.social {
 
     body {
         overflow-x: hidden;
+    }
+
+    .nav-wrapper {
+        padding: 20px 20px;
     }
 
     .nav-active {
@@ -1196,6 +1220,10 @@ a.social {
         padding: 0px;
     }
 
+    .img-text-wrapper:hover .subtitle-wrapper {
+        margin: 10px 0px 0px 0px;
+    }
+
     .img-text-wrapper .subtitle p {
         margin: 0px;
         font-size: 1.3rem;
@@ -1237,7 +1265,7 @@ a.social {
     }
 
     .transparent-menu {
-        padding: 20px 15px;
+        padding: 10px 14px;
     }
 
     .transparent-menu .right-side {
@@ -1254,7 +1282,7 @@ a.social {
     /* Responsive Navbar and Button */
 
     .nav-wrapper {
-        padding: 20px 15px;
+        padding: 10px 14px;
     }
 
     .burger {

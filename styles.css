@@ -33,7 +33,7 @@ img[alt="www.000webhost.com"] {
 
 .logo {
     padding: 2px 6px;
-    border: #1a1a1a solid 4px;
+    border: #1a1a1a solid 3px;
     font-size: 1.6rem;
     font-family: 'Alata', sans-serif;
     text-transform: uppercase;
@@ -542,7 +542,7 @@ button#nav-right {
 
 .transparent-menu .logo {
     padding: 2px 6px;
-    border: #1a1a1a solid 4px;
+    border: #1a1a1a solid 3px;
     font-size: 1.6rem;
     background: transparent;
 }
